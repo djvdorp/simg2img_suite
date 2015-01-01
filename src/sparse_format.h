@@ -14,10 +14,6 @@
  * limitations under the License.
  */
 
-#ifndef _LIBSPARSE_SPARSE_FORMAT_H_
-#define _LIBSPARSE_SPARSE_FORMAT_H_
-#include "sparse_defs.h"
-
 typedef struct sparse_header {
   __le32	magic;		/* 0xed26ff3a */
   __le16	major_version;	/* (0x1) - reject images with higher major versions */
@@ -52,4 +48,3 @@ typedef struct chunk_header {
  *  For a CRC32 chunk, it's 4 bytes of CRC32
  */
 
-#endif
