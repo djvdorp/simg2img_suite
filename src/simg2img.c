@@ -21,7 +21,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#ifdef WIN32
+#include "mman.h"
+#else
 #include <sys/mman.h>
+#endif
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdio.h>
